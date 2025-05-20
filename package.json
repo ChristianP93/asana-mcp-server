@@ -1,0 +1,38 @@
+{
+  "name": "my-asana-mcp-server",
+  "version": "0.0.1",
+  "description": "MCP server for interacting with Asana API",
+  "license": "MIT",
+  "author": "Christian Pengu (https://christianpengu.com)",
+  "homepage": "TBD",
+  "bugs": "TBD",
+  "type": "module",
+  "bin": {
+    "asana": "dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.19",
+    "prettier": "3.5.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.4",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2",
+    "shx": "^0.4.0",
+    "zod": "^3.25.4"
+  }
+}

@@ -1,0 +1,11 @@
+# Build output
+dist
+node_modules
+
+# Lockfiles
+package-lock.json
+yarn.lock
+
+# Optional local files
+.env
+*.log
